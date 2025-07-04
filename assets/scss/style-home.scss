@@ -1,0 +1,19 @@
+@import "./partials/bootstrap/functions";
+@import "./partials/bootstrap/variables";
+@import "./partials/options-genres";
+@import "./partials/iconProfile";
+@import "./partials/nav-edit";
+@import "./partials/buttonEditProfile";
+
+$bg-more-black: black;
+
+$add-theme-colors: (
+  "moreDark": $bg-more-black,
+);
+
+$theme-colors: map-merge(
+  $map1: $theme-colors,
+  $map2: $add-theme-colors,
+);
+
+@import "./partials/bootstrap/bootstrap.scss";

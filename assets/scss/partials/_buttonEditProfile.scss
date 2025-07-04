@@ -1,0 +1,97 @@
+#edit {
+  width: 5.5em;
+  height: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.573);
+  background-color: black;
+  color: white;
+
+  &:hover {
+    color: white !important;
+    cursor: pointer;
+  }
+}
+
+#edit1 {
+  width: 7.5em;
+  height: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.573);
+  background-color: black;
+  color: white;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+  }
+}
+
+#edit2 {
+  width: 7.5em;
+  height: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.573);
+  background-color: black;
+  color: white;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+  }
+}
+
+#edit3 {
+  width: 9.5em;
+  height: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.573);
+  background-color: black;
+  color: white;
+
+  &:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background: black;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: darkred;
+  border: 1px solid grey;
+  transition: all 0.1s linear 0s;
+}
+
+#btn-ring {
+  background-color: black;
+  border: none;
+  margin-left: 5px;
+  color: darkred;
+  &:hover {
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
+  }
+}
